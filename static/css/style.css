@@ -1,0 +1,90 @@
+/* Base styles */
+body {
+  font-family: Tahoma, sans-serif;
+  background-color: #03ad00;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  padding: 20px;
+  background: #03ad00;
+  box-shadow: 0 0px 0px rgba(0, 0, 0, 0.0);
+  border-radius: 0px;
+}
+
+h1 {
+  color: #000000;
+  font-size: 1.8rem; /* Base size for the title */
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#result-text {
+  font-size: calc(1.8rem * 1.25); /* 1.25x the title size */
+  font-weight: bold; /* Make it stand out */
+  color: #ffffff; /* Highlighted green color */
+  margin: 20px auto; /* Same side margins as the title */
+  text-align: center; /* Ensure the text is centered */
+}
+
+.result {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 10px auto 20px auto;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #383838;
+  color: rgb(255, 255, 255);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+    box-shadow: none;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  #result-text {
+    font-size: calc(1.5rem * 1.5);
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  input[type="file"] {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+}
+  

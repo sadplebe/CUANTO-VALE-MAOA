@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cartoon Recognition App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>¿Cuánto vale MAOA?</h1>
+    <div id="form-wrapper">
+      <form id="upload-form" action="/" method="POST" enctype="multipart/form-data">
+        <label for="file-input">Upload your image:</label>
+        <input type="file" id="file-input" name="image" required>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="result">
+      {% if result %}
+        <p id="result-text">{{ result }}</p>
+      {% endif %}
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
